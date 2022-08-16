@@ -1,4 +1,4 @@
-require 'personal_diary'
+require 'make_snippet'
 
 RSpec.describe "make_snippet method" do
     it "first takes a string and returns string" do
@@ -12,5 +12,9 @@ RSpec.describe "make_snippet method" do
     it "takes a sentence and returns first 5 words and ..." do
         result = make_snippet('The boy is going home to his family')
         expect(result).to eq "The boy is going home ..."
+    end
+    it "takes a sentence and returns first 5 words and ..." do
+        result = make_snippet('Caroline is going home now')
+        expect(result).to eq 'Caroline is going home now'
     end
 end 

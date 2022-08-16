@@ -6,7 +6,8 @@ def make_snippet(str)
 # Then use .join to put the 5 elements of the array together
 # Then concatnate the joined array and '...' together 
     str_arr = str.split # Changing string to an array so we can count elements
-    if str_arr.length < 5
+    if str_arr.length 
+      p " running up to here"
         return str 
     else
       five_words = str_arr[0..4].join(' ') # .join(' ') is used to join all elements of array back together
